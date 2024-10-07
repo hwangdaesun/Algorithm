@@ -1,4 +1,4 @@
-package 해쉬또는정렬지원Set;
+package 정렬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
