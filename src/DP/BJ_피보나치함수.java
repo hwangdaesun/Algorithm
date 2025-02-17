@@ -1,4 +1,4 @@
-package 재귀;
+package DP;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
