@@ -24,22 +24,9 @@ public class BJ_2230 {
 
         int j = 0;
         for(int i=0; i<n; i++){
-            if((input[j] - input[i]) >= m){
-                ans = Math.min(ans, (input[j] - input[i]));
-            }else{
-                while(true){
-                    if(m > (input[j] - input[i])){
-                        if(j < n-1){
-                            j++;
-                        }else{
-                            break;
-                        }
-                    }else{
-                        ans = Math.min(ans, (input[j] - input[i]));
-                        break;
-                    }
-                }
-            }
+            while(j < n && (input[j] - input[i] < m)) j++;
+            if(j == n) break;
+            ans = Math.min(ans, input[j]-input[i]);
         }
         System.out.print(ans);
     }
